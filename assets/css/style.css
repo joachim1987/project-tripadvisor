@@ -1,7 +1,7 @@
 /* GLOBAL RULES */
 
 body {
-  font-family: "Trip Sans Med", Arial, Helvetica, sans-serif;
+  font-family: 'Trip Sans Med', Arial, Helvetica, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -20,7 +20,46 @@ h1 span {
   color: red;
 }
 
+h2 {
+  font-family: 'Trip Sans Med';
+  font-weight: 700;
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+h3 {
+  font-family: 'Trip Sans Med';
+  font-size: 24px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+section {
+  height: 320px;
+  background-color: limegreen;
+  border-color: midnightblue 2px solid;
+  margin-bottom: 100px;
+}
+
 /* HEADER */
+p {
+  font-family: 'Trip Sans Reg';
+  font-weight: 300;
+  font-size: 18px;
+  width: 445px;
+  text-align: justify;
+  line-height: 24px;
+  margin-bottom: 60px;
+}
+h3 p {
+  font-family: 'Trip Sans Reg';
+  font-weight: 300;
+  font-size: 18px;
+  width: 288px;
+  text-align: left;
+  line-height: 24px;
+  margin-bottom: 60px;
+}
 
 header {
   height: 80px;
@@ -44,6 +83,13 @@ header nav div {
   align-items: center;
 }
 
+header nav div:hover {
+  background-color: lightgray;
+  font-size: 'Trip Sans Med';
+  font-weight: 700;
+  cursor: pointer;
+}
+
 header nav div i {
   font-size: 30px;
   color: grey;
@@ -56,6 +102,12 @@ header button {
   padding: 10px 30px;
   border-radius: 20px;
   font-family: inherit;
+}
+
+header button:hover {
+  background-color: black;
+  color: white;
+  cursor: pointer;
 }
 
 /* MAIN */
@@ -73,9 +125,10 @@ main {
   border: black 2px solid;
   flex: 1;
   /* width: calc(100% / 6); */
-  padding: 20px;
+  padding: 15px;
   display: flex;
   justify-content: space-between;
+  border-radius: 20px;
 }
 
 .menu div:not(:last-child) {
@@ -90,7 +143,7 @@ main {
 
 .pictures {
   height: 430px;
-  margin-bottom: 100px;
+  margin-bottom: 50px;
   display: flex;
 }
 
