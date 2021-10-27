@@ -35,10 +35,32 @@ h3 {
 }
 
 section {
-  height: 320px;
+  height: 385px;
   background-color: limegreen;
-  border-color: midnightblue 2px solid;
+  border: black 4px solid;
   margin-bottom: 100px;
+  display: flex;
+}
+
+.text-1 {
+  font-family: 'Trip Sans Reg';
+  font-weight: 300;
+  font-size: 18px;
+  width: 230px;
+  line-height: 24px;
+  margin-bottom: 10px;
+  display: flex;
+}
+
+.text-2 {
+  font-family: 'Trip Sans Reg';
+  font-weight: 700;
+  font-size: 16px;
+  width: 288px;
+  text-align: justify;
+  text-decoration: underline;
+  margin-top: 10px;
+  cursor: pointer;
 }
 
 /* HEADER */
@@ -48,15 +70,6 @@ p {
   font-size: 18px;
   width: 445px;
   text-align: justify;
-  line-height: 24px;
-  margin-bottom: 60px;
-}
-h3 p {
-  font-family: 'Trip Sans Reg';
-  font-weight: 300;
-  font-size: 18px;
-  width: 288px;
-  text-align: left;
   line-height: 24px;
   margin-bottom: 60px;
 }
@@ -168,4 +181,28 @@ main {
   width: 100%;
   height: calc(50% - 1.5px);
   object-fit: cover;
+}
+
+.divertissement {
+  width: 1000px;
+  display: flex;
+  box-sizing: border-box;
+}
+
+.divertissement .col-1 {
+  margin-right: 10px;
+}
+
+.divertissement .col-2 {
+  display: flex;
+  padding-top: 50px;
+  overflow: hidden;
+  overflow-x: scroll;
+  position: relative;
+}
+
+.divertissement .col-2 img {
+  margin-right: 15px;
+  width: 275px;
+  height: 200px;
 }
