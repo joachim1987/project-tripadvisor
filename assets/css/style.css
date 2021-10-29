@@ -7,9 +7,11 @@ body {
 }
 
 .container {
-  width: 1140px;
+  max-width: 1140px;
   /* border: solid 3px; */
   margin: 0 auto;
+  box-sizing: border-box;
+  padding: 0 40px;
 }
 
 h1 {
@@ -49,13 +51,6 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  position: fixed;
-  top: 0;
-  z-index: 99;
-}
-
-.w100 {
-  width: 100vw;
 }
 
 header img {
@@ -67,10 +62,11 @@ header nav {
   align-items: center;
 }
 
-header nav div {
+header nav:hover {
   margin-right: 20px;
   display: flex;
   align-items: center;
+  cursor: pointer;
 }
 
 header nav div i {
@@ -94,7 +90,7 @@ header button:hover {
 /* MAIN */
 
 main {
-  padding-top: 130px;
+  padding-top: 60px;
 }
 
 .menu {
@@ -110,6 +106,12 @@ main {
   display: flex;
   justify-content: space-between;
   border-radius: 20px;
+  box-sizing: border-box;
+}
+
+.menu div:nth-child(6),
+.menu div:nth-child(7) {
+  display: none;
 }
 
 .menu div:not(:last-child) {
@@ -172,8 +174,7 @@ main {
 .carrousel-container .col-2 {
   width: 75%;
   display: flex;
-  overflow: hidden;
-  overflow: scroll;
+  overflow: auto;
 }
 
 /* Hide scrollbar for Chrome, Safari and Opera *
@@ -230,6 +231,10 @@ main {
 
 .small-text {
   font-size: 14px !important ;
+}
+
+header .hidden {
+  display: none;
 }
 
 .col-carrousel.small-text:hover {
